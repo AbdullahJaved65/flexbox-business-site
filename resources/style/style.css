@@ -33,6 +33,7 @@ nav {
   background-color: #ffe01b;
   padding: 1%;
   position: sticky;
+  top: 53.86px;
 }
 
 .logo {
@@ -72,7 +73,7 @@ a {
 .sales-text {
   align-self: center;
   display: flex;
-  margin: auto 2%;
+  margin-right: 2%;
   text-align: center;
   width: 15%;
 }
@@ -103,8 +104,9 @@ a {
   font-weight: 600;
   /* width: 25%; */
 }
-.login:hover,
-.signup:hover {
+
+.login-btn:hover,
+.signup-btn:hover {
   background: white;
   border: 1px solid #241c15;
 }
@@ -114,8 +116,38 @@ a {
   gap: 10%;
 }
 
-.hero {
-    background-color: #ffe01b;
-    display: flex;
-    height: auto;
+.hero-section {
+  background-color: #ffe01b;
+  display: flex;
+  height: auto;
+  padding: 1% 0;
+}
+
+.left-section {
+  align-self: center;
+  padding-left: 4%;
+  width: 40%;
+}
+
+.left-section h2 {
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 3%;
+}
+
+.left-section p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-top: 0%;
+}
+
+.right-section {
+  width: 60%;
+}
+
+.right-section img {
+  height: 100%;
+  justify-content: center;
+  margin-left: 9%;
+  width: 85%;
 }
