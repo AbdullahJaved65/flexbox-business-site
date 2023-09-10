@@ -229,6 +229,7 @@ a {
 
 .grow-mailchimp {
   margin: 4% 0 0% 0;
+  padding-bottom: 4%;
 }
 
 .grow-bg {
@@ -269,4 +270,48 @@ a {
 
 .grow-heading-size {
   font-size: large;
+}
+
+.subscribe {
+  background-color: #241c15;
+  color: #f6f6f4;
+  height: 35rem;
+  /* padding: 0 15%; */
+}
+
+input {
+  border-radius: 0.5rem;
+  height: 3rem;
+  justify-self: center;
+  margin-left: 21.5%;
+  width: 55%;
+}
+
+.subscribe p {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 21.5%;
+}
+
+.subscribe .signup-btn {
+  margin-top: 2%;
+  margin-left: 45%;
+}
+
+.subscribe .terms {
+  font-size: x-small;
+  margin-top: 5.5%;
+  margin-left: 11%;
+  margin-right: 14%;
+  text-align: center;
+}
+
+.footer {
+  background-color: #e7b75f;
+  padding: 3% 3%;
+}
+
+.footer-text {
+  font-size: x-small;
+  margin: 0%;
 }
