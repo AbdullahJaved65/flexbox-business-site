@@ -29,6 +29,17 @@ ul {
   display: flex;
 }
 
+nav,
+.logo,
+.globe,
+.left-section,
+.login,
+.login-btn,
+.nav-links,
+.right-section {
+  flex-wrap: wrap;
+}
+
 nav {
   background-color: #ffe01b;
   padding: 1%;
@@ -150,4 +161,16 @@ a {
   justify-content: center;
   margin-left: 9%;
   width: 85%;
+}
+
+.why-us {
+  padding: 4% 14%;
+  text-align: center;
+}
+.why-us h2 {
+  font-size: 2.7rem;
+}
+
+.why-us p {
+  font-size: x-large;
 }
