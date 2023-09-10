@@ -164,13 +164,64 @@ a {
 }
 
 .why-us {
-  padding: 4% 14%;
+  padding: 3.5% 20%;
   text-align: center;
 }
 .why-us h2 {
-  font-size: 2.7rem;
+  font-size: 2.4rem;
+  margin-bottom: 1%;
 }
 
 .why-us p {
   font-size: x-large;
+}
+
+.card-heading,
+.card-icon,
+.card-section,
+.cards,
+.image-card,
+.image-cards {
+  display: flex;
+  flex-grow: 1;
+  /* flex-wrap: wrap; */
+}
+.card-section {
+  flex-direction: column;
+  /* justify-content: center; */
+  /* padding: 0.5% 5% 5% 5%; */
+}
+
+.cards {
+  gap: 52px;
+  padding: 0 8%;
+}
+
+.image-card {
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  margin: 0 3%;
+  justify-content: center;
+}
+
+.card-icon {
+  height: 50%;
+  width: 55%;
+}
+
+.image-card h4 {
+  margin-bottom: 1%;
+}
+
+.text {
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.image-cards {
+  flex-direction: row;
+  align-items: center;
 }
