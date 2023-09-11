@@ -33,6 +33,7 @@ nav,
 .logo,
 .globe,
 .left-section,
+/* .left-section-hero, */
 .login,
 .login-btn,
 .nav-links,
@@ -49,6 +50,10 @@ nav {
 
 .logo {
   align-self: center;
+}
+
+.logo img {
+  height: 3.5rem;
 }
 
 .nav-links {
@@ -130,6 +135,7 @@ a {
 .hero-section {
   background-color: #ffe01b;
   display: flex;
+  /* flex-wrap: wrap; */
   height: auto;
   padding: 1% 0;
 }
@@ -137,7 +143,7 @@ a {
 .left-section-hero {
   align-self: center;
   padding-left: 4%;
-  width: 40%;
+  width: 50%;
 }
 
 .left-section-hero h2 {
@@ -153,7 +159,7 @@ a {
 }
 
 .right-section {
-  width: 60%;
+  width: 50%;
 }
 
 .right-section-hero img {
@@ -314,4 +320,117 @@ input {
 .footer-text {
   font-size: x-small;
   margin: 0%;
+}
+
+@media only screen and (max-width: 890px) {
+  .hero-section {
+    flex-wrap: wrap;
+  }
+  .left-section-hero {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  .nav-links, .search, .globe, .sales-text {
+    display: none;
+  }
+
+  .buttons {
+    margin-left: auto;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .hero-section, .right-section, .left-section {
+    flex-wrap: wrap;
+  }
+  .left-section, .right-section{
+    width: 100%;
+  }
+  .subscribe {
+    padding-bottom: 45%;
+  }
+  
+}
+
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .nav-grid {
+    grid-template-columns: 100%; /* Stack the columns on smaller screens */
+    padding: 1.5% 5%;
+  }
+  .logo {
+    justify-self: center;
+  }
+  .nav-links {
+    justify-self: stretch;
+  }
+  .hero-section {
+    background-position: center; /* Center background image */
+  }
+  .form-section {
+    padding: 5% 10%; /* Adjust padding for smaller screens */
+  }
+  .form-section input {
+    width: 15rem;
+  }
+  .submit-btn {
+    margin-left: 0%;
+  }
+  .cards-section {
+    grid-template-columns: 1fr; /* Display 2 columns on smaller screens */
+  }
+  .menu-section {
+    grid-template-columns: 1fr; /* Display 2 columns on smaller screens */
+    padding: 0 11%;
+    /* width: 375px; */
+  }
+  .menu-card {
+    width: 100%;
+  }
+  .menu-card h6,
+  h4,
+  p {
+    padding-left: 5%;
+  }
+
+  .menu-card small {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .order-now-btn {
+    margin-top: 50%;
+    margin-left: 17%;
+  }
+  .menu-headings {
+    margin-top: 15%;
+    padding: 0% 8%;
+  }
+  .meal-kit {
+    grid-template-columns: 1fr; /* Display 2 columns on smaller screens */
+    padding: 5% 0%;
+    text-align: center; /* Adjust padding for smaller screens */
+  }
+  .meal-kit ul li {
+    list-style: none;
+  }
+  .cfa-section {
+    background-position: center; /* Center background image */
+    margin-top: 30%;
+    padding: 6% 5%; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+  .cfa-btn {
+    margin-left: 13%;
+  }
+  .customer-services {
+    margin-top: 12%;
+    text-align: center;
+  }
+  .reviews-section {
+    grid-template-columns: 1fr;
+    margin-bottom: 15%; /* Display 2 columns on smaller screens */
+    padding: 5% 10%;
+    text-align: center;
+  }
 }
